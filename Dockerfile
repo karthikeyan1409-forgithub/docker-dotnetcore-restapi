@@ -1,4 +1,5 @@
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.1
-WORKDIR /app
+WORKDIR /dotnetcorestapi
 COPY . .
-ENTRYPOINT ["dotnet", "DemoRESTAPI.dll"]
+EXPOSE 80
+CMD ["dotnet", "DemoRESTAPI.dll"]
